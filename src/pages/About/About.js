@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
-import howItWorksImg from "../../assets/chessboard.png";
+// import howItWorksImg from "../../assets/chessboard.png";
 
 const About = () => {
   return (
@@ -35,17 +36,18 @@ const About = () => {
         </p>
 
         <h2 className="section-title">How PlayShatranj Works</h2>
-        <p>
-          PlayShatranj integrates intelligent hardware with our web platform. Each square
-          on the chessboard uses <strong>LDR sensors</strong> to detect movement, and an
-          <strong> ESP32 microcontroller</strong> processes data in real time.
-          A <strong>16-to-1 multiplexer</strong> manages multiple inputs, ensuring every move
-          is tracked with accuracy and speed.
-        </p>
+      <p>
+        PlayShatranj integrates intelligent hardware with our web platform. Each square on the
+        chessboard uses <strong>LDR sensors</strong> to detect movement, and an{" "}
+        <strong>ESP32 microcontroller</strong> processes data in real time. A{" "}
+        <strong>16-to-1 multiplexer</strong> manages multiple inputs, ensuring every move is tracked
+        with accuracy and speed.
+      </p>
 
-        <div className="how-it-works">
-          <img src={howItWorksImg} alt="How PlayShatranj Works" />
-        </div>
+
+      <Link to="/hardware-details" className="readmore-button">
+        Read More →
+      </Link>
 
         <h2 className="section-title">The Team Behind PlayShatranj</h2>
         <p>
