@@ -1,0 +1,84 @@
+.howitworks-container {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0a0f1a, #010409);
+  color: #e0e0e0;
+  padding: 80px 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.howitworks-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffc6;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffc6;
+}
+
+.howitworks-title span {
+  color: #ffffff;
+}
+
+.howitworks-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+.howitworks-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.howitworks-text {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.howitworks-text strong {
+  color: #00ffc6;
+}
+
+.howitworks-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howitworks-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 198, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.howitworks-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(0, 255, 198, 0.5);
+}
+
+.howitworks-readmore {
+  display: inline-block;
+  margin-top: 30px;
+  color: #00ffc6;
+  text-decoration: none;
+  border: 1px solid #00ffc6;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.howitworks-readmore:hover {
+  background-color: #00ffc6;
+  color: #000;
+  transform: scale(1.05);
+}
